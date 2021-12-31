@@ -12,8 +12,9 @@
 	
 </head>
 <body>
-	<i class='fa fa-check'></i> = <b>Hospeda algo com a Web Thomaz</b><br>
-	<i class='fa fa-exclamation-circle'></i> = <b>Domínio existente, mas NÃO hospeda com a Web Thomaz</b><br>
+	<h2>Summário:</h2>
+	<i class='fa fa-check'></i> = <b>Hospeda algo com a <?php echo $yourCompany; ?> </b><br>
+	<i class='fa fa-exclamation-circle'></i> = <b>Domínio existente, mas NÃO hospeda com a <?php echo $yourCompany; ?> </b><br>
 	<i class='fa fa-times-circle'></i> = <b>Domínio inexistente</b><br>
 	<i class='fa fa-globe'></i> = <b>Possui Website</b><br>
 	<i class='fa fa-envelope'></i> = <b>Possui e-mail</b><br>
