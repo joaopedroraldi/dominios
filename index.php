@@ -1,59 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
+	<?php include('config.php'); ?>
 	<meta charset="UTF-8">
 	<title>Conferência de dominios</title>
 
-	<link href="favicon.fw.png" rel="icon" />
-
-	<style type="text/css">
-		* {
-			box-sizing: border-box;
-		}
-		.warn {
-			color: red;
-		}
-
-        <?php echo file_get_contents('css/font-awesome/css/font-awesome.min.css'); ?>
-		.fa-check { color: green ; }
-		.fa-exclamation-circle { color: orange; }
-		.fa-times-circle { color: red ; }
-		.fa-globe { color: blue; }
-		.fa-envelope { color: lightblue; }
-		.fa-plus-circle { color: lightgreen; }
-		
-
-		.dominio {
-			float: left;
-			width: 100%;
-			border-bottom: solid 1px #000;
-			padding-bottom: 5px;
-			margin-bottom: 5px;
-		}
-		form {
-			float: left;
-			width: 50%;
-			margin: 5px 25%;
-			border: solid 1px #ccc;
-			border-radius: 10px;
-			padding: 15px;
-			margin-bottom: 15px;
-		}
-		textarea {
-			width: 100%;
-			height: 100px;
-			margin-bottom: 5px;
-			float: left;
-		}
-		button {
-			float: left;
-			width: 100px;
-			height: 35px;
-			background: #fff;
-			border: solid 1px #333;
-			cursor: pointer;
-		}
-	</style>
+	<link href="<?php echo BASE ?>favicon.fw.png" rel="icon" />
+	<link href="<?php echo BASE ?>css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo BASE ?>css/style.css" rel="stylesheet">
+	<base href="<?php echo BASE ?>" />
+	
 </head>
 <body>
 	<i class='fa fa-check'></i> = <b>Hospeda algo com a Web Thomaz</b><br>
