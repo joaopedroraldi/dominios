@@ -44,6 +44,9 @@
 
 			foreach ($dominios as $key => $dominio) {
 				$testes = ["www", "mail", "ftp"];
+				$dominio = trim($dominio);
+
+				if ($dominio == "") continue;
 
 				echo "<div class='dominio'>";
 				echo "<b>#" . ($key + 1) . "</b> - ";
@@ -93,7 +96,7 @@
 				} else { //domínio não existe
 						$mensagem .= "<i class='fa fa-times-circle'></i> <br>";
 				}
-				echo "<b><a href='$dominio' target='_blank'> {$dominio} </a> ({$ip})</b> ";
+				echo "<b><a href='https://" . $dominio . "' target='_blank'> {$dominio} </a> ({$ip})</b> ";
 				echo $mensagem;
 				echo "</div>";
 			}
