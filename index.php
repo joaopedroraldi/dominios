@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Conferência de dominios</title>
 
+	<link href="favicon.fw.png" rel="icon" />
+
 	<style type="text/css">
 		* {
 			box-sizing: border-box;
