@@ -94,6 +94,7 @@
 						$mensagem .= "<i class='fa fa-exclamation-circle'></i> <br>";
 					}
 				} else { //domínio não existe
+						$ip = "";
 						$mensagem .= "<i class='fa fa-times-circle'></i> <br>";
 				}
 				echo "<b><a href='https://" . $dominio . "' target='_blank'> {$dominio} </a> ({$ip})</b> ";
